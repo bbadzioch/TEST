@@ -1,0 +1,4403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MTH Courses Fall 2025</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/4.0.1/js/dataTables.fixedHeader.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+    <style>
+       h3 {
+            margin-left: 20px;
+            margin-top: -10px;
+            font-size: 24px;
+            color: #005bbb;;
+            font-family: Sofia, Arial, sans-serif;
+            font-weight: bold;
+        }
+        h2 {
+            margin-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #000000;;
+            font-family: Sofia, Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        #scheduleTable_wrapper {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        table.dataTable th,
+        td {
+            font-size: 16px;
+        }
+
+        table>tbody>tr:nth-child(even) td {
+            background-color: #CCDEF1;
+            color: #212529;
+        }
+
+        table>tbody>tr:nth-child(odd) td {
+            background-color: #ffffff;
+            color: #212529;
+        }
+
+        table>tbody>tr:nth-child(even):hover td {
+            background-color: #B7C7D8;
+        }
+
+        table>tbody>tr:nth-child(odd):hover td {
+            background-color: #CCCCCC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <img src="ub_logo.png" alt="UB Blue Logo" style="height:30px; margin:20px;">
+        <h3>Department of Mathematics</h3>
+        <h2 >Course Schedule &bull; Fall 2025</h2>
+        <table class="table" id="scheduleTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Course Num</th>
+      <th>Type</th>
+      <th>Course Title</th>
+      <th>Days</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Room</th>
+      <th>Instructor</th>
+      <th>Instructor Email</th>
+      <th>Enr</th>
+      <th>Cap</th>
+      <th>Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MTH 101LR A</td>
+      <td>LEC</td>
+      <td>Intro to Contemporary Math</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Nsc 218</td>
+      <td>Hudson, Tara</td>
+      <td>tarahuds@buffalo.edu</td>
+      <td>58</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 101LR A1</td>
+      <td>REC</td>
+      <td>Intro to Contemporary Math</td>
+      <td>R</td>
+      <td>09:30 AM</td>
+      <td>10:20 AM</td>
+      <td>Frnczk 219</td>
+      <td>Anderson, Zoey</td>
+      <td>zoeyande@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 101LR A2</td>
+      <td>REC</td>
+      <td>Intro to Contemporary Math</td>
+      <td>R</td>
+      <td>12:30 PM</td>
+      <td>01:20 PM</td>
+      <td>Capen 110</td>
+      <td>Anderson, Zoey</td>
+      <td>zoeyande@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 112LEC A</td>
+      <td>LEC</td>
+      <td>Intermediate Algebra</td>
+      <td>MWF</td>
+      <td>09:20 AM</td>
+      <td>10:30 AM</td>
+      <td>Baldy 110</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>45</td>
+      <td>45</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 112LEC B</td>
+      <td>LEC</td>
+      <td>Intermediate Algebra</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>01:10 PM</td>
+      <td>Baldy 110</td>
+      <td>Samul, Angela</td>
+      <td>asamul@buffalo.edu</td>
+      <td>45</td>
+      <td>45</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 112LEC C</td>
+      <td>LEC</td>
+      <td>Intermediate Algebra</td>
+      <td>MWF</td>
+      <td>01:20 PM</td>
+      <td>02:30 PM</td>
+      <td>Baldy 110</td>
+      <td>Samul, Angela</td>
+      <td>asamul@buffalo.edu</td>
+      <td>43</td>
+      <td>45</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 112LEC EO</td>
+      <td>LEC</td>
+      <td>Intermediate Algebra</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>01:10 PM</td>
+      <td>Capen 258</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>29</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 112LEC EO</td>
+      <td>LEC</td>
+      <td>Intermediate Algebra</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>01:10 PM</td>
+      <td>Capen 258</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>29</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC A</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>08:00 AM</td>
+      <td>09:10 AM</td>
+      <td>Talbrt 113</td>
+      <td>Giancola, Tammy</td>
+      <td>giancola@buffalo.edu</td>
+      <td>33</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC AA</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MW</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Capen 258</td>
+      <td>Howell, Stephanie</td>
+      <td>sehowell@buffalo.edu</td>
+      <td>32</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC B</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>09:20 AM</td>
+      <td>10:30 AM</td>
+      <td>Cooke 248</td>
+      <td>Kisker, Sandra</td>
+      <td>kisker@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC BB</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Norton 216</td>
+      <td>Dinardo, Meghan</td>
+      <td>mehouse@buffalo.edu</td>
+      <td>31</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC C</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>09:20 AM</td>
+      <td>10:30 AM</td>
+      <td>Talbrt 113</td>
+      <td>Giancola, Tammy</td>
+      <td>giancola@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC CC</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MW</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Norton 213</td>
+      <td>Wilde, Walter</td>
+      <td>walterwi@buffalo.edu</td>
+      <td>20</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC D</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>10:40 AM</td>
+      <td>11:50 AM</td>
+      <td>Cooke 248</td>
+      <td>Kisker, Sandra</td>
+      <td>kisker@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC E</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>10:40 AM</td>
+      <td>11:50 AM</td>
+      <td>Talbrt 113</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC F</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>01:10 PM</td>
+      <td>Cooke 248</td>
+      <td>Kisker, Sandra</td>
+      <td>kisker@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC G</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>01:10 PM</td>
+      <td>Talbrt 113</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC H</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>01:20 PM</td>
+      <td>02:30 PM</td>
+      <td>Cooke 248</td>
+      <td>Kisker, Sandra</td>
+      <td>kisker@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC J</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>01:20 PM</td>
+      <td>02:30 PM</td>
+      <td>Capen 258</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC K</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>02:40 PM</td>
+      <td>03:50 PM</td>
+      <td>Cooke 248</td>
+      <td>Kisker, Sandra</td>
+      <td>kisker@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC L</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MW</td>
+      <td>04:00 PM</td>
+      <td>05:40 PM</td>
+      <td>Cooke 248</td>
+      <td>Hayter, Christine</td>
+      <td>cmhayter@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC M</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MW</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Cooke 248</td>
+      <td>Hayter, Christine</td>
+      <td>cmhayter@buffalo.edu</td>
+      <td>33</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC N</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>11:10 AM</td>
+      <td>Cooke 248</td>
+      <td>Filipski, Michael</td>
+      <td>mgfilips@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC O</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>11:30 AM</td>
+      <td>01:10 PM</td>
+      <td>Cooke 248</td>
+      <td>Suddaby, Jacquie</td>
+      <td>jmsuddab@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC P</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>01:30 PM</td>
+      <td>03:10 PM</td>
+      <td>Cooke 248</td>
+      <td>Suddaby, Jacquie</td>
+      <td>jmsuddab@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC Q</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>03:30 PM</td>
+      <td>05:10 PM</td>
+      <td>Capen 258</td>
+      <td>Szucs, Francis</td>
+      <td>ftszucs@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC R</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>11:10 AM</td>
+      <td>Capen 258</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC S</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>11:30 AM</td>
+      <td>01:10 PM</td>
+      <td>Capen 258</td>
+      <td>Spahn, Elizabeth</td>
+      <td>espahn@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC T</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>01:30 PM</td>
+      <td>03:10 PM</td>
+      <td>Capen 258</td>
+      <td>Szucs, Francis</td>
+      <td>ftszucs@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC U</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>03:30 PM</td>
+      <td>05:10 PM</td>
+      <td>Park 250</td>
+      <td>Filipski, Michael</td>
+      <td>mgfilips@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC V</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>04:00 PM</td>
+      <td>05:40 PM</td>
+      <td>Talbrt 103</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC W</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>04:00 PM</td>
+      <td>05:40 PM</td>
+      <td>Norton 216</td>
+      <td>Dinardo, Meghan</td>
+      <td>mehouse@buffalo.edu</td>
+      <td>32</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC X</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>TR</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Talbrt 103</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC Y</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MWF</td>
+      <td>02:40 PM</td>
+      <td>03:50 PM</td>
+      <td>Baldy 110</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>33</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 113LEC Z</td>
+      <td>LEC</td>
+      <td>Precalculus without Trig</td>
+      <td>MW</td>
+      <td>04:00 PM</td>
+      <td>05:40 PM</td>
+      <td>Capen 258</td>
+      <td>Howell, Stephanie</td>
+      <td>sehowell@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC A</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MWF</td>
+      <td>08:00 AM</td>
+      <td>09:10 AM</td>
+      <td>Capen 258</td>
+      <td>Filipski, Michael</td>
+      <td>mgfilips@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC B</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MWF</td>
+      <td>09:20 AM</td>
+      <td>10:30 AM</td>
+      <td>Capen 258</td>
+      <td>Filipski, Michael</td>
+      <td>mgfilips@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC C</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MWF</td>
+      <td>01:20 PM</td>
+      <td>02:30 PM</td>
+      <td>Talbrt 113</td>
+      <td>Paolini, Jill</td>
+      <td>jpaolini@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC D</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MWF</td>
+      <td>01:20 PM</td>
+      <td>02:30 PM</td>
+      <td>Baldy 108</td>
+      <td>Filipski, Michael</td>
+      <td>mgfilips@buffalo.edu</td>
+      <td>44</td>
+      <td>44</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC E</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MWF</td>
+      <td>02:40 PM</td>
+      <td>03:50 PM</td>
+      <td>Capen 258</td>
+      <td>Filipski, Michael</td>
+      <td>mgfilips@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC F</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MWF</td>
+      <td>02:40 PM</td>
+      <td>03:50 PM</td>
+      <td>Talbrt 113</td>
+      <td>Paolini, Jill</td>
+      <td>jpaolini@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC G</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MW</td>
+      <td>04:00 PM</td>
+      <td>05:40 PM</td>
+      <td>Talbrt 113</td>
+      <td>Paolini, Jill</td>
+      <td>jpaolini@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC H</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>MW</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Talbrt 113</td>
+      <td>Paolini, Jill</td>
+      <td>jpaolini@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC J</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>08:00 AM</td>
+      <td>09:40 AM</td>
+      <td>Talbrt 113</td>
+      <td>Hayter, Christine</td>
+      <td>cmhayter@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC K</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>10:00 AM</td>
+      <td>11:40 AM</td>
+      <td>Talbrt 113</td>
+      <td>Hayter, Christine</td>
+      <td>cmhayter@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC L</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>12:00 PM</td>
+      <td>01:40 PM</td>
+      <td>Talbrt 113</td>
+      <td>Hayter, Christine</td>
+      <td>cmhayter@buffalo.edu</td>
+      <td>35</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC M</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:40 PM</td>
+      <td>Talbrt 113</td>
+      <td>Hayter, Christine</td>
+      <td>cmhayter@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC N</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:40 PM</td>
+      <td>Talbrt 103</td>
+      <td>Beyer, Brian</td>
+      <td>brianbey@buffalo.edu</td>
+      <td>40</td>
+      <td>40</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC O</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>04:00 PM</td>
+      <td>05:40 PM</td>
+      <td>Talbrt 113</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>33</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC P</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>06:00 PM</td>
+      <td>07:40 PM</td>
+      <td>Talbrt 113</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>33</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC Q</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>11:30 AM</td>
+      <td>01:10 PM</td>
+      <td>Alumni 90</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>28</td>
+      <td>28</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC R</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>01:30 PM</td>
+      <td>03:10 PM</td>
+      <td>Hoch 307</td>
+      <td>Mason, Nicholas</td>
+      <td>ncmason@buffalo.edu</td>
+      <td>27</td>
+      <td>27</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 114LEC S</td>
+      <td>LEC</td>
+      <td>Precalculus</td>
+      <td>TR</td>
+      <td>03:30 PM</td>
+      <td>05:10 PM</td>
+      <td>Alumni 88</td>
+      <td>Wilde, Walter</td>
+      <td>walterwi@buffalo.edu</td>
+      <td>28</td>
+      <td>28</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 120LEC 000</td>
+      <td>LEC</td>
+      <td>Selected Calculus Topics</td>
+      <td>ARR</td>
+      <td>12:00 AM</td>
+      <td>12:00 AM</td>
+      <td>Math Arr</td>
+      <td>Casper, Michael</td>
+      <td>mjcasper@buffalo.edu</td>
+      <td>1</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR A</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Nsc 210</td>
+      <td>Raico, Pasquale</td>
+      <td>ppraico@buffalo.edu</td>
+      <td>89</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR A1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Capen 110</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR A2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Frnczk 219</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR A3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Norton 213</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR B</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Nsc 218</td>
+      <td>Raico, Pasquale</td>
+      <td>ppraico@buffalo.edu</td>
+      <td>88</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR B1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Baldy 117</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR B2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Talbrt 111</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR B3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Cooke 114</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR C</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Nsc 220</td>
+      <td>Casper, Michael</td>
+      <td>mjcasper@buffalo.edu</td>
+      <td>83</td>
+      <td>83</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR C1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Capen 109</td>
+      <td>Mani, Vinayak</td>
+      <td>vinayakm@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR C2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Clemen 436</td>
+      <td>Stanton, Xavier</td>
+      <td>xtstanto@buffalo.edu</td>
+      <td>24</td>
+      <td>24</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR C3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Obrian 214</td>
+      <td>Stanton, Xavier</td>
+      <td>xtstanto@buffalo.edu</td>
+      <td>29</td>
+      <td>29</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR D</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>MWF</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Nsc 220</td>
+      <td>Casper, Michael</td>
+      <td>mjcasper@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR D1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Norton 210</td>
+      <td>Babu, Christo</td>
+      <td>christob@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR D2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Capen 260</td>
+      <td>Babu, Christo</td>
+      <td>christob@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR D3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Park 146</td>
+      <td>Babu, Christo</td>
+      <td>christob@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR G</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>TR</td>
+      <td>08:00 AM</td>
+      <td>09:20 AM</td>
+      <td>Nsc 201</td>
+      <td>Stephen, Kathlene</td>
+      <td>hockaday@buffalo.edu</td>
+      <td>65</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR G1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Capen 110</td>
+      <td>Hartz, James</td>
+      <td>jwhartz@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR G2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Capen 201A</td>
+      <td>Hartz, James</td>
+      <td>jwhartz@buffalo.edu</td>
+      <td>21</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR G3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>06:00 PM</td>
+      <td>06:50 PM</td>
+      <td>Park 250</td>
+      <td>Hartz, James</td>
+      <td>jwhartz@buffalo.edu</td>
+      <td>16</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR H</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>MWF</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Nsc 218</td>
+      <td>Weinberg, Matt</td>
+      <td>mkweinbe@buffalo.edu</td>
+      <td>78</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR H1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>M</td>
+      <td>06:00 PM</td>
+      <td>06:50 PM</td>
+      <td>Norton 216</td>
+      <td>Rele, Adhish</td>
+      <td>adhishpr@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR H2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>W</td>
+      <td>06:00 PM</td>
+      <td>06:50 PM</td>
+      <td>Norton 216</td>
+      <td>Babu, Christo</td>
+      <td>christob@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 121LR H3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 1</td>
+      <td>F</td>
+      <td>06:00 PM</td>
+      <td>06:50 PM</td>
+      <td>Norton 216</td>
+      <td>Rele, Adhish</td>
+      <td>adhishpr@buffalo.edu</td>
+      <td>18</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR A</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Nsc 220</td>
+      <td>Stephen, Kathlene</td>
+      <td>hockaday@buffalo.edu</td>
+      <td>80</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR A1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>T</td>
+      <td>09:30 AM</td>
+      <td>10:20 AM</td>
+      <td>Bell 337</td>
+      <td>Cuevas, Christian</td>
+      <td>ccuevas@buffalo.edu</td>
+      <td>22</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR A2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>T</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Clemen 322</td>
+      <td>Cuevas, Christian</td>
+      <td>ccuevas@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR A3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>T</td>
+      <td>03:30 PM</td>
+      <td>04:20 PM</td>
+      <td>Clemen 17</td>
+      <td>Cuevas, Christian</td>
+      <td>ccuevas@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR B</td>
+      <td>LEC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Nsc 210</td>
+      <td>Stephen, Kathlene</td>
+      <td>hockaday@buffalo.edu</td>
+      <td>84</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR B1</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>T</td>
+      <td>12:30 PM</td>
+      <td>01:20 PM</td>
+      <td>Math 122</td>
+      <td>Rele, Adhish</td>
+      <td>adhishpr@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR B2</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>T</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Cooke 127B</td>
+      <td>Rele, Adhish</td>
+      <td>adhishpr@buffalo.edu</td>
+      <td>26</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 122LR B3</td>
+      <td>REC</td>
+      <td>Surv Calculus &amp; Appl 2</td>
+      <td>T</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Bell 138</td>
+      <td>Sun, Tommy</td>
+      <td>jsun45@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR A</td>
+      <td>LEC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Nsc 210</td>
+      <td>Marino, Mark</td>
+      <td>mrmarino@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR A1</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 102</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR A2</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Norton 214</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR A3</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Talbrt 111</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR B</td>
+      <td>LEC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>MWF</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Nsc 210</td>
+      <td>Marino, Mark</td>
+      <td>mrmarino@buffalo.edu</td>
+      <td>89</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR B1</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Talbrt 111</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR B2</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Obrian 209</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR B3</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 17</td>
+      <td>Cheuk, Tom</td>
+      <td>kayueche@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR C</td>
+      <td>LEC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Nsc 210</td>
+      <td>Marino, Mark</td>
+      <td>mrmarino@buffalo.edu</td>
+      <td>89</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR C1</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>W</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Talbrt 111</td>
+      <td>Meyer, Drew</td>
+      <td>drewmeye@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR C2</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Cfa 144</td>
+      <td>Meyer, Drew</td>
+      <td>drewmeye@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR C3</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>W</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Talbrt 111</td>
+      <td>Meyer, Drew</td>
+      <td>drewmeye@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR D</td>
+      <td>LEC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>MWF</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Nsc 210</td>
+      <td>Marino, Mark</td>
+      <td>mrmarino@buffalo.edu</td>
+      <td>68</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR D1</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 04</td>
+      <td>Sun, Tommy</td>
+      <td>jsun45@buffalo.edu</td>
+      <td>9</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR D2</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>W</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Capen 201A</td>
+      <td>Sun, Tommy</td>
+      <td>jsun45@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR D3</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>W</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Baldy 117</td>
+      <td>Sun, Tommy</td>
+      <td>jsun45@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR F</td>
+      <td>LEC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Baldy 101</td>
+      <td>Cercone, Timothy</td>
+      <td>tcercone@buffalo.edu</td>
+      <td>87</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR F1</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 19</td>
+      <td>Meyer, Drew</td>
+      <td>drewmeye@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR F2</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Capen 201A</td>
+      <td>Hausrath, Sebastian</td>
+      <td>schausra@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 131LR F3</td>
+      <td>REC</td>
+      <td>Math Analysis for Managemt</td>
+      <td>F</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Baldy 117</td>
+      <td>Hausrath, Sebastian</td>
+      <td>schausra@buffalo.edu</td>
+      <td>27</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR A</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Nsc 216</td>
+      <td>Rosas, Michael</td>
+      <td>marosas@buffalo.edu</td>
+      <td>89</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR A1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 17</td>
+      <td>Gavigan, Owen</td>
+      <td>owengavi@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR A2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Norton 210</td>
+      <td>Gavigan, Owen</td>
+      <td>owengavi@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR A3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Obrian 209</td>
+      <td>Biyar, Magzhan</td>
+      <td>biyar@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR B</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Nsc 210</td>
+      <td>Rosas, Michael</td>
+      <td>marosas@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR B1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Baldy 108</td>
+      <td>Liao, Chang-Chih</td>
+      <td>cliao9@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR B2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Clemen 106</td>
+      <td>Liao, Chang-Chih</td>
+      <td>cliao9@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR B3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 04</td>
+      <td>Liao, Chang-Chih</td>
+      <td>cliao9@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR C</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Nsc 220</td>
+      <td>Casper, Michael</td>
+      <td>mjcasper@buffalo.edu</td>
+      <td>85</td>
+      <td>87</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR C1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 103</td>
+      <td>LaMorte, Emily</td>
+      <td>enlamort@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR C2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Hoch 307</td>
+      <td>LaMorte, Emily</td>
+      <td>enlamort@buffalo.edu</td>
+      <td>27</td>
+      <td>27</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR C3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Nsc 216</td>
+      <td>Mani, Vinayak</td>
+      <td>vinayakm@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR D</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Nsc 210</td>
+      <td>Casper, Michael</td>
+      <td>mjcasper@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR D1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Frnczk 408</td>
+      <td>Biyar, Magzhan</td>
+      <td>biyar@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR D2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Norton 209</td>
+      <td>Biyar, Magzhan</td>
+      <td>biyar@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR D3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>M</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Capen 110</td>
+      <td>Biyar, Magzhan</td>
+      <td>biyar@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR F</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>MWF</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Nsc 220</td>
+      <td>McCann, Donald</td>
+      <td>djmccann@buffalo.edu</td>
+      <td>82</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR F1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Math 150</td>
+      <td>Zhao, Boyang</td>
+      <td>bzhao23@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR F2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Norton 209</td>
+      <td>Purple, Cameron</td>
+      <td>cz22@buffalo.edu</td>
+      <td>24</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR F3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Norton 213</td>
+      <td>Purple, Cameron</td>
+      <td>cz22@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR G</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>MWF</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Nsc 220</td>
+      <td>Koch, Jeff</td>
+      <td>jkoch2@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR G1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>W</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Bell 138</td>
+      <td>Koch, Jeff</td>
+      <td>jkoch2@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR G2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>W</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Talbrt 115</td>
+      <td>Deshmukh, Suhail</td>
+      <td>suhailba@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR G3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Capen 109</td>
+      <td>Deshmukh, Suhail</td>
+      <td>suhailba@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR GM1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>ARR</td>
+      <td>12:00 AM</td>
+      <td>12:00 AM</td>
+      <td>Arr Arr</td>
+      <td>Izydorczak, Anne</td>
+      <td>aemartin@buffalo.edu</td>
+      <td>28</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR I</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>MWF</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Nsc 210</td>
+      <td>Raico, Pasquale</td>
+      <td>ppraico@buffalo.edu</td>
+      <td>88</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR I1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Capen 110</td>
+      <td>Liao, Chang-Chih</td>
+      <td>cliao9@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR I2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Capen 201A</td>
+      <td>Liao, Chang-Chih</td>
+      <td>cliao9@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR I3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Park 146</td>
+      <td>Liao, Chang-Chih</td>
+      <td>cliao9@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR J</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Nsc 228</td>
+      <td>Alegria, Linda</td>
+      <td>lindaale@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR J1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Cooke 114</td>
+      <td>Alegria, Linda</td>
+      <td>lindaale@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR J2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Cooke 114</td>
+      <td>Alegria, Linda</td>
+      <td>lindaale@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR J3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>F</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Bell 138</td>
+      <td>Alegria, Linda</td>
+      <td>lindaale@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR K</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Nsc 228</td>
+      <td>Stephen, Kathlene</td>
+      <td>hockaday@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR K1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>T</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Baldy 110</td>
+      <td>Patel, Rani</td>
+      <td>rdpatel5@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR K2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>T</td>
+      <td>03:30 PM</td>
+      <td>04:20 PM</td>
+      <td>Clemen 19</td>
+      <td>Patel, Rani</td>
+      <td>rdpatel5@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR K3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>T</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Capen 260</td>
+      <td>Lin, Haodong</td>
+      <td>haodongl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR L</td>
+      <td>LEC</td>
+      <td>College Calculus 1</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Nsc 210</td>
+      <td>Rosas, Michael</td>
+      <td>marosas@buffalo.edu</td>
+      <td>88</td>
+      <td>89</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR L1</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>W</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 102</td>
+      <td>Lin, Haodong</td>
+      <td>haodongl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR L2</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>W</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Norton 210</td>
+      <td>Lin, Haodong</td>
+      <td>haodongl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 141LR L3</td>
+      <td>REC</td>
+      <td>College Calculus 1</td>
+      <td>W</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Park 143</td>
+      <td>Lin, Haodong</td>
+      <td>haodongl@buffalo.edu</td>
+      <td>28</td>
+      <td>29</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR A</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Nsc 218</td>
+      <td>Hudson, Tara</td>
+      <td>tarahuds@buffalo.edu</td>
+      <td>87</td>
+      <td>87</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR A1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 17</td>
+      <td>Lin, Kyle</td>
+      <td>klin79@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR A2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Frnczk 408</td>
+      <td>Lin, Kyle</td>
+      <td>klin79@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR A3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Hoch 307</td>
+      <td>Gladding, Jonathan</td>
+      <td>jdgladdi@buffalo.edu</td>
+      <td>27</td>
+      <td>27</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR B</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>TR</td>
+      <td>08:00 AM</td>
+      <td>09:20 AM</td>
+      <td>Nsc 218</td>
+      <td>Hudson, Tara</td>
+      <td>tarahuds@buffalo.edu</td>
+      <td>82</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR B1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Talbrt 106</td>
+      <td>Zhao, Boyang</td>
+      <td>bzhao23@buffalo.edu</td>
+      <td>22</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR B2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Norton 213</td>
+      <td>Zhao, Boyang</td>
+      <td>bzhao23@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR B3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Capen 110</td>
+      <td>Zhao, Boyang</td>
+      <td>bzhao23@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR C</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Nsc 216</td>
+      <td>Busch, Robert</td>
+      <td>rlbusch@buffalo.edu</td>
+      <td>91</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR C1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 106</td>
+      <td>Gladding, Jonathan</td>
+      <td>jdgladdi@buffalo.edu</td>
+      <td>31</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR C2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Obrian 109</td>
+      <td>Gladding, Jonathan</td>
+      <td>jdgladdi@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR C3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Clemen 17</td>
+      <td>Gladding, Jonathan</td>
+      <td>jdgladdi@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR D</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Nsc 222</td>
+      <td>Javor, Kimberly</td>
+      <td>kejavor@buffalo.edu</td>
+      <td>82</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR D1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Clemen 119</td>
+      <td>Zhang, Baoming</td>
+      <td>baomingz@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR D2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Baldy 117</td>
+      <td>Zhang, Baoming</td>
+      <td>baomingz@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR D3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Talbrt 103</td>
+      <td>Zhang, Baoming</td>
+      <td>baomingz@buffalo.edu</td>
+      <td>22</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR F</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Nsc 222</td>
+      <td>Javor, Kimberly</td>
+      <td>kejavor@buffalo.edu</td>
+      <td>89</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR F1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Park 145</td>
+      <td>Zhang, Baoming</td>
+      <td>baomingz@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR F2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Bell 138</td>
+      <td>Zhang, Baoming</td>
+      <td>baomingz@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR F3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>F</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Capen 260</td>
+      <td>Zhang, Baoming</td>
+      <td>baomingz@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR G</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>MWF</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Nsc 216</td>
+      <td>Raico, Pasquale</td>
+      <td>ppraico@buffalo.edu</td>
+      <td>87</td>
+      <td>87</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR G1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Cooke 114</td>
+      <td>Aadhikesavan, Aadhishwaran</td>
+      <td>aadhishw@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR G2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Hoch 307</td>
+      <td>Aadhikesavan, Aadhishwaran</td>
+      <td>aadhishw@buffalo.edu</td>
+      <td>27</td>
+      <td>27</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR G3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Norton 210</td>
+      <td>Liao, Yanzhan</td>
+      <td>yanzhanl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR H</td>
+      <td>LEC</td>
+      <td>College Calculus 2</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Nsc 228</td>
+      <td>Busch, Robert</td>
+      <td>rlbusch@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR H1</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Bell 138</td>
+      <td>Liao, Yanzhan</td>
+      <td>yanzhanl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR H2</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Park 440</td>
+      <td>Liao, Yanzhan</td>
+      <td>yanzhanl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 142LR H3</td>
+      <td>REC</td>
+      <td>College Calculus 2</td>
+      <td>W</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Norton 216</td>
+      <td>Liao, Yanzhan</td>
+      <td>yanzhanl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 153LR A</td>
+      <td>LEC</td>
+      <td>Honors Calculus 1</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 250</td>
+      <td>Mangahas, Johanna</td>
+      <td>mangahas@buffalo.edu</td>
+      <td>19</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 153LR A1</td>
+      <td>REC</td>
+      <td>Honors Calculus 1</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 102</td>
+      <td>Cuevas, Christian</td>
+      <td>ccuevas@buffalo.edu</td>
+      <td>19</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR A</td>
+      <td>LEC</td>
+      <td>College Calculus 3</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Baldy 101</td>
+      <td>Sikora, Adam</td>
+      <td>asikora@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR A1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>F</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Clemen 119</td>
+      <td>Hehr, Keith</td>
+      <td>hehr@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR A2</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Clemen 17</td>
+      <td>Hehr, Keith</td>
+      <td>hehr@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR A3</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 106</td>
+      <td>Hehr, Keith</td>
+      <td>hehr@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR B</td>
+      <td>LEC</td>
+      <td>College Calculus 3</td>
+      <td>TR</td>
+      <td>08:00 AM</td>
+      <td>09:20 AM</td>
+      <td>Nsc 205</td>
+      <td>Sikora, Adam</td>
+      <td>asikora@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR B1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>F</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Baldy 117</td>
+      <td>Hehr, Keith</td>
+      <td>hehr@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR B2</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>F</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Park 145</td>
+      <td>Boadi, Evans</td>
+      <td>evansboa@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR B3</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>F</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Talbrt 106</td>
+      <td>Erickson, Michael</td>
+      <td>erickso2@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR C</td>
+      <td>LEC</td>
+      <td>College Calculus 3</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Nsc 218</td>
+      <td>Zhang, Xingru</td>
+      <td>xinzhang@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR C1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Talbrt 115</td>
+      <td>Erickson, Michael</td>
+      <td>erickso2@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR C2</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Nsc 218</td>
+      <td>Erickson, Michael</td>
+      <td>erickso2@buffalo.edu</td>
+      <td>31</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR C3</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Park 440</td>
+      <td>Erickson, Michael</td>
+      <td>erickso2@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR D</td>
+      <td>LEC</td>
+      <td>College Calculus 3</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Nsc 222</td>
+      <td>Busch, Robert</td>
+      <td>rlbusch@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR D1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 106</td>
+      <td>Purple, Cameron</td>
+      <td>cz22@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR D2</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Talbrt 111</td>
+      <td>Deshmukh, Suhail</td>
+      <td>suhailba@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR D3</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Obrian 210</td>
+      <td>Purple, Cameron</td>
+      <td>cz22@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR F</td>
+      <td>LEC</td>
+      <td>College Calculus 3</td>
+      <td>MWF</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Nsc 218</td>
+      <td>Busch, Robert</td>
+      <td>rlbusch@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR F1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Cooke 114</td>
+      <td>Boadi, Evans</td>
+      <td>evansboa@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR F2</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Capen 109</td>
+      <td>Aadhikesavan, Aadhishwaran</td>
+      <td>aadhishw@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR F3</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 106</td>
+      <td>Aadhikesavan, Aadhishwaran</td>
+      <td>aadhishw@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR G</td>
+      <td>LEC</td>
+      <td>College Calculus 3</td>
+      <td>MWF</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Nsc 220</td>
+      <td>Javor, Kimberly</td>
+      <td>kejavor@buffalo.edu</td>
+      <td>90</td>
+      <td>90</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR G1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 06</td>
+      <td>Sarkar, Sayantan</td>
+      <td>sayantan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR G2</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Talbrt 111</td>
+      <td>Sarkar, Sayantan</td>
+      <td>sayantan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR G3</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>M</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Park 146</td>
+      <td>Sarkar, Sayantan</td>
+      <td>sayantan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 241LR GM1</td>
+      <td>REC</td>
+      <td>College Calculus 3</td>
+      <td>ARR</td>
+      <td>12:00 AM</td>
+      <td>12:00 AM</td>
+      <td>Arr Arr</td>
+      <td>Izydorczak, Anne</td>
+      <td>aemartin@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR A</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Knox 14</td>
+      <td>Javor, Kimberly</td>
+      <td>kejavor@buffalo.edu</td>
+      <td>59</td>
+      <td>59</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR A1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>F</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Park 143</td>
+      <td>Mahagedara, Hiruja</td>
+      <td>hirujama@buffalo.edu</td>
+      <td>29</td>
+      <td>29</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR A2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>F</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Talbrt 106</td>
+      <td>Mahagedara, Hiruja</td>
+      <td>hirujama@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR B</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>MWF</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Nsc 205</td>
+      <td>Coppini, Francesco</td>
+      <td>fcoppini@buffalo.edu</td>
+      <td>55</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR B1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Capen 201A</td>
+      <td>Boadi, Evans</td>
+      <td>evansboa@buffalo.edu</td>
+      <td>27</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR B2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>W</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Cooke 127B</td>
+      <td>Boadi, Evans</td>
+      <td>evansboa@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR C</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Norton 218</td>
+      <td>Placito, Corey</td>
+      <td>coreypla@buffalo.edu</td>
+      <td>60</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR C1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>T</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Talbrt 103</td>
+      <td>Mathie, Joe</td>
+      <td>jqmathie@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR C2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>T</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Obrian 102</td>
+      <td>Mathie, Joe</td>
+      <td>jqmathie@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR D</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Nsc 216</td>
+      <td>Placito, Corey</td>
+      <td>coreypla@buffalo.edu</td>
+      <td>60</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR D1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>T</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Baldy 108</td>
+      <td>Nepa, Nurjahan</td>
+      <td>nurjahan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR D2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>T</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Baldy 108</td>
+      <td>Nepa, Nurjahan</td>
+      <td>nurjahan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR E</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Nsc 205</td>
+      <td>Chang, Joon</td>
+      <td>joondoch@buffalo.edu</td>
+      <td>58</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR E1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>M</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Obrian 212</td>
+      <td>Chang, Joon</td>
+      <td>joondoch@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR E2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>M</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Obrian 214</td>
+      <td>Mahagedara, Hiruja</td>
+      <td>hirujama@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR F</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Obrian 109</td>
+      <td>Placito, Corey</td>
+      <td>coreypla@buffalo.edu</td>
+      <td>60</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR F1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>R</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Baldy 108</td>
+      <td>Nepa, Nurjahan</td>
+      <td>nurjahan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR F2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>R</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Baldy 108</td>
+      <td>Nepa, Nurjahan</td>
+      <td>nurjahan@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR G</td>
+      <td>LEC</td>
+      <td>Intro Diff Equations</td>
+      <td>TR</td>
+      <td>03:30 PM</td>
+      <td>04:50 PM</td>
+      <td>Nsc 228</td>
+      <td>Placito, Corey</td>
+      <td>coreypla@buffalo.edu</td>
+      <td>60</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR G1</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>R</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Talbrt 103</td>
+      <td>Haverlick, Justin</td>
+      <td>jmhaverl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 306LR G2</td>
+      <td>REC</td>
+      <td>Intro Diff Equations</td>
+      <td>R</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 04</td>
+      <td>Haverlick, Justin</td>
+      <td>jmhaverl@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR A</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Norton 218</td>
+      <td>Badzioch, Bernard</td>
+      <td>badzioch@buffalo.edu</td>
+      <td>59</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR A1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Capen 240</td>
+      <td>Sharma, Abhishek</td>
+      <td>aks28@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR A2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Norton 213</td>
+      <td>Sharma, Abhishek</td>
+      <td>aks28@buffalo.edu</td>
+      <td>29</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR B</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>MWF</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Clemen 322</td>
+      <td>Lottes, Jonathan</td>
+      <td>jllottes@buffalo.edu</td>
+      <td>33</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR B1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Bell 138</td>
+      <td>Haverlick, Justin</td>
+      <td>jmhaverl@buffalo.edu</td>
+      <td>13</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR B2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Clemen 106</td>
+      <td>Rodriguez, Porfi</td>
+      <td>pr58@buffalo.edu</td>
+      <td>20</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR C</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Frnczk 422</td>
+      <td>Lottes, Jonathan</td>
+      <td>jllottes@buffalo.edu</td>
+      <td>58</td>
+      <td>58</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR C1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Norton 214</td>
+      <td>Haverlick, Justin</td>
+      <td>jmhaverl@buffalo.edu</td>
+      <td>28</td>
+      <td>28</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR C2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Capen 240</td>
+      <td>Rodriguez, Porfi</td>
+      <td>pr58@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR D</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>MWF</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Knox 14</td>
+      <td>Moore, Robert</td>
+      <td>rcmoore@buffalo.edu</td>
+      <td>60</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR D1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Capen 109</td>
+      <td>Moore, Robert</td>
+      <td>rcmoore@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR D2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Clemen 04</td>
+      <td>Rodriguez, Porfi</td>
+      <td>pr58@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR F</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Frnczk 454</td>
+      <td>Gendin, Daniel</td>
+      <td>dgendin@buffalo.edu</td>
+      <td>58</td>
+      <td>59</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR F1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>R</td>
+      <td>12:30 PM</td>
+      <td>01:20 PM</td>
+      <td>Clemen 17</td>
+      <td>Ma, Ning</td>
+      <td>nma22@buffalo.edu</td>
+      <td>28</td>
+      <td>29</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR F2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>R</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Obrian 212</td>
+      <td>Ma, Ning</td>
+      <td>nma22@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR G</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>TR</td>
+      <td>08:00 AM</td>
+      <td>09:20 AM</td>
+      <td>Nsc 216</td>
+      <td>Li, Xiaoqing</td>
+      <td>xl29@buffalo.edu</td>
+      <td>25</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR G1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>R</td>
+      <td>03:30 PM</td>
+      <td>04:20 PM</td>
+      <td>Clemen 19</td>
+      <td>Ma, Ning</td>
+      <td>nma22@buffalo.edu</td>
+      <td>14</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR G2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>R</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Talbrt 106</td>
+      <td>Rodriguez, Porfi</td>
+      <td>pr58@buffalo.edu</td>
+      <td>11</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR H</td>
+      <td>LEC</td>
+      <td>Intro Linear Algebra</td>
+      <td>TR</td>
+      <td>05:00 PM</td>
+      <td>06:20 PM</td>
+      <td>Talbrt 107</td>
+      <td>Li, Yiqiang</td>
+      <td>yiqiang@buffalo.edu</td>
+      <td>48</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR H1</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Obrian 109</td>
+      <td>Spaker, Alia</td>
+      <td>aliaspak@buffalo.edu</td>
+      <td>18</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 309LR H2</td>
+      <td>REC</td>
+      <td>Intro Linear Algebra</td>
+      <td>F</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Park 250</td>
+      <td>Spaker, Alia</td>
+      <td>aliaspak@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 311LR B</td>
+      <td>LEC</td>
+      <td>Intro to Higher Math</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Math 250</td>
+      <td>Hundley, Joseph</td>
+      <td>jahundle@buffalo.edu</td>
+      <td>43</td>
+      <td>50</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 311LR B1</td>
+      <td>REC</td>
+      <td>Intro to Higher Math</td>
+      <td>W</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Math 122</td>
+      <td>Vadnere, Arya</td>
+      <td>aryaabhi@buffalo.edu</td>
+      <td>18</td>
+      <td>25</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 311LR B2</td>
+      <td>REC</td>
+      <td>Intro to Higher Math</td>
+      <td>W</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Math 122</td>
+      <td>Vadnere, Arya</td>
+      <td>aryaabhi@buffalo.edu</td>
+      <td>25</td>
+      <td>25</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 311LR C</td>
+      <td>LEC</td>
+      <td>Intro to Higher Math</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Math 250</td>
+      <td>Li, Xiaoqing</td>
+      <td>xl29@buffalo.edu</td>
+      <td>34</td>
+      <td>50</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 311LR C1</td>
+      <td>REC</td>
+      <td>Intro to Higher Math</td>
+      <td>F</td>
+      <td>09:00 AM</td>
+      <td>09:50 AM</td>
+      <td>Math 122</td>
+      <td>Vadnere, Arya</td>
+      <td>aryaabhi@buffalo.edu</td>
+      <td>12</td>
+      <td>25</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 311LR C2</td>
+      <td>REC</td>
+      <td>Intro to Higher Math</td>
+      <td>F</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Math 122</td>
+      <td>Vadnere, Arya</td>
+      <td>aryaabhi@buffalo.edu</td>
+      <td>22</td>
+      <td>25</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 337LEC A</td>
+      <td>LEC</td>
+      <td>Scientific and Math Comp</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Math 150</td>
+      <td>Gendin, Daniel</td>
+      <td>dgendin@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 337LEC B</td>
+      <td>LEC</td>
+      <td>Scientific and Math Comp</td>
+      <td>MW</td>
+      <td>03:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Math 150</td>
+      <td>Lottes, Jonathan</td>
+      <td>jllottes@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 353LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Combinatorics I</td>
+      <td>MWF</td>
+      <td>03:00 PM</td>
+      <td>03:50 PM</td>
+      <td>Math 250</td>
+      <td>Streipel, Jakob</td>
+      <td>jstreipe@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 411LR A</td>
+      <td>LEC</td>
+      <td>Probability Theory</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Nsc 228</td>
+      <td>Chou, Ching</td>
+      <td>chouc@buffalo.edu</td>
+      <td>46</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 411LR A1</td>
+      <td>REC</td>
+      <td>Probability Theory</td>
+      <td>R</td>
+      <td>09:30 AM</td>
+      <td>10:20 AM</td>
+      <td>Bell 337</td>
+      <td>McGee, Aaron</td>
+      <td>aaronmcg@buffalo.edu</td>
+      <td>30</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 411LR A2</td>
+      <td>REC</td>
+      <td>Probability Theory</td>
+      <td>R</td>
+      <td>08:30 AM</td>
+      <td>09:20 AM</td>
+      <td>Frnczk 454</td>
+      <td>McGee, Aaron</td>
+      <td>aaronmcg@buffalo.edu</td>
+      <td>16</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 411LR B</td>
+      <td>LEC</td>
+      <td>Probability Theory</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Nsc 218</td>
+      <td>Chou, Ching</td>
+      <td>chouc@buffalo.edu</td>
+      <td>44</td>
+      <td>60</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 411LR B1</td>
+      <td>REC</td>
+      <td>Probability Theory</td>
+      <td>R</td>
+      <td>03:30 PM</td>
+      <td>04:20 PM</td>
+      <td>Clemen 17</td>
+      <td>McGee, Aaron</td>
+      <td>aaronmcg@buffalo.edu</td>
+      <td>28</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 411LR B2</td>
+      <td>REC</td>
+      <td>Probability Theory</td>
+      <td>R</td>
+      <td>05:00 PM</td>
+      <td>05:50 PM</td>
+      <td>Park 146</td>
+      <td>McGee, Aaron</td>
+      <td>aaronmcg@buffalo.edu</td>
+      <td>16</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 417LR A</td>
+      <td>LEC</td>
+      <td>Survey Multivariable Cal</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Math 250</td>
+      <td>Ramachandran, Mohan</td>
+      <td>ramac-m@buffalo.edu</td>
+      <td>40</td>
+      <td>40</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 417LR A1</td>
+      <td>REC</td>
+      <td>Survey Multivariable Cal</td>
+      <td>W</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 150</td>
+      <td>Sharma, Abhishek</td>
+      <td>aks28@buffalo.edu</td>
+      <td>20</td>
+      <td>20</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 417LR A2</td>
+      <td>REC</td>
+      <td>Survey Multivariable Cal</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 250</td>
+      <td>Sharma, Abhishek</td>
+      <td>aks28@buffalo.edu</td>
+      <td>20</td>
+      <td>20</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 418LR A</td>
+      <td>LEC</td>
+      <td>Surv Partial Differ Equa</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 150</td>
+      <td>Ossi, Nicholas</td>
+      <td>nossi@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 418LR A1</td>
+      <td>REC</td>
+      <td>Surv Partial Differ Equa</td>
+      <td>M</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 150</td>
+      <td>Mathie, Joe</td>
+      <td>jqmathie@buffalo.edu</td>
+      <td>34</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 419LR A</td>
+      <td>LEC</td>
+      <td>Intro to Abstract Algebra</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 122</td>
+      <td>Badzioch, Bernard</td>
+      <td>badzioch@buffalo.edu</td>
+      <td>30</td>
+      <td>31</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 419LR A1</td>
+      <td>REC</td>
+      <td>Intro to Abstract Algebra</td>
+      <td>F</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 250</td>
+      <td>Ma, Ning</td>
+      <td>nma22@buffalo.edu</td>
+      <td>30</td>
+      <td>31</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 427LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Topology 1</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Math 150</td>
+      <td>Menasco, William</td>
+      <td>menasco@buffalo.edu</td>
+      <td>6</td>
+      <td>15</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 429LEC A</td>
+      <td>LEC</td>
+      <td>Intro Theory Numbers 1</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 235</td>
+      <td>Cusick, Thomas</td>
+      <td>cusick@buffalo.edu</td>
+      <td>4</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 431LR A</td>
+      <td>LEC</td>
+      <td>Intro Real Variables 1</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Math 250</td>
+      <td>Ramachandran, Mohan</td>
+      <td>ramac-m@buffalo.edu</td>
+      <td>27</td>
+      <td>40</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 431LR A1</td>
+      <td>REC</td>
+      <td>Intro Real Variables 1</td>
+      <td>W</td>
+      <td>01:00 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 150</td>
+      <td>Mathie, Joe</td>
+      <td>jqmathie@buffalo.edu</td>
+      <td>27</td>
+      <td>40</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 435LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Cryptography</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 250</td>
+      <td>Cusick, Thomas</td>
+      <td>cusick@buffalo.edu</td>
+      <td>2</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 437LR A</td>
+      <td>LEC</td>
+      <td>Intro Numeric Analysis 1</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Math 150</td>
+      <td>Han, Daozhi</td>
+      <td>daozhiha@buffalo.edu</td>
+      <td>22</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 437LR A1</td>
+      <td>REC</td>
+      <td>Intro Numeric Analysis 1</td>
+      <td>T</td>
+      <td>04:00 PM</td>
+      <td>04:50 PM</td>
+      <td>Math 150</td>
+      <td>Sarkar, Sayantan</td>
+      <td>sayantan@buffalo.edu</td>
+      <td>22</td>
+      <td>35</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 443LEC A</td>
+      <td>LEC</td>
+      <td>Fundamen Applied Math 1</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 250</td>
+      <td>Muldoon, Sarah</td>
+      <td>smuldoon@buffalo.edu</td>
+      <td>30</td>
+      <td>40</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 446LEC A</td>
+      <td>LEC</td>
+      <td>Stochastic Processes</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Math 122</td>
+      <td>Spencer, Brian</td>
+      <td>spencerb@buffalo.edu</td>
+      <td>20</td>
+      <td>25</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 455LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Complex Systems</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Capen 108</td>
+      <td>Muldoon, Sarah</td>
+      <td>smuldoon@buffalo.edu</td>
+      <td>10</td>
+      <td>15</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 461LEC A</td>
+      <td>LEC</td>
+      <td>Topics in Algebra</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 205</td>
+      <td>Chirvasitu, Alexandru</td>
+      <td>achirvas@buffalo.edu</td>
+      <td>3</td>
+      <td>6</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 511LEC A</td>
+      <td>LEC</td>
+      <td>Probability Theory</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Nsc 228</td>
+      <td>Chou, Ching</td>
+      <td>chouc@buffalo.edu</td>
+      <td>0</td>
+      <td>8</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 511LEC B</td>
+      <td>LEC</td>
+      <td>Probability Theory</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Nsc 218</td>
+      <td>Chou, Ching</td>
+      <td>chouc@buffalo.edu</td>
+      <td>1</td>
+      <td>8</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 517LEC A</td>
+      <td>LEC</td>
+      <td>Survey Multivariable Cal</td>
+      <td>MWF</td>
+      <td>02:00 PM</td>
+      <td>02:50 PM</td>
+      <td>Math 250</td>
+      <td>Ramachandran, Mohan</td>
+      <td>ramac-m@buffalo.edu</td>
+      <td>1</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 518LEC A</td>
+      <td>LEC</td>
+      <td>Surv Partial Differ Equa</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 150</td>
+      <td>Ossi, Nicholas</td>
+      <td>nossi@buffalo.edu</td>
+      <td>1</td>
+      <td>5</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 519LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Abstract Algebra</td>
+      <td>MF</td>
+      <td>02:30 PM</td>
+      <td>03:50 PM</td>
+      <td>Math 235</td>
+      <td>Trivedi, Vijaylaxmi</td>
+      <td>vijaylax@buffalo.edu</td>
+      <td>5</td>
+      <td>14</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 527LEC A</td>
+      <td>LEC</td>
+      <td>Introductn to Topology 1</td>
+      <td>MWF</td>
+      <td>12:00 PM</td>
+      <td>12:50 PM</td>
+      <td>Math 150</td>
+      <td>Menasco, William</td>
+      <td>menasco@buffalo.edu</td>
+      <td>5</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 529LEC A</td>
+      <td>LEC</td>
+      <td>Intro Theory of Numbers 1</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 235</td>
+      <td>Cusick, Thomas</td>
+      <td>cusick@buffalo.edu</td>
+      <td>0</td>
+      <td>4</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 531LEC A</td>
+      <td>LEC</td>
+      <td>Intro Real Variables 1</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Math 250</td>
+      <td>Ramachandran, Mohan</td>
+      <td>ramac-m@buffalo.edu</td>
+      <td>3</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 534LEC A</td>
+      <td>LEC</td>
+      <td>Basic Measure Theory</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 122</td>
+      <td>Faran, James</td>
+      <td>jjfaran@buffalo.edu</td>
+      <td>5</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 535LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Cryptography</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 250</td>
+      <td>Cusick, Thomas</td>
+      <td>cusick@buffalo.edu</td>
+      <td>2</td>
+      <td>25</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 537LEC A</td>
+      <td>LEC</td>
+      <td>Intro Numeric Analysis 1</td>
+      <td>TR</td>
+      <td>08:00 AM</td>
+      <td>09:20 AM</td>
+      <td>Math 205</td>
+      <td>Ringland, John</td>
+      <td>ringland@buffalo.edu</td>
+      <td>8</td>
+      <td>11</td>
+      <td>Hybrid: remote and in person</td>
+    </tr>
+    <tr>
+      <td>MTH 539LEC A</td>
+      <td>LEC</td>
+      <td>Method of Applied Math 1</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Math 122</td>
+      <td>Han, Daozhi</td>
+      <td>daozhiha@buffalo.edu</td>
+      <td>5</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 543LEC A</td>
+      <td>LEC</td>
+      <td>Fundamen Applied Math 1</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 250</td>
+      <td>Muldoon, Sarah</td>
+      <td>smuldoon@buffalo.edu</td>
+      <td>0</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 546LEC A</td>
+      <td>LEC</td>
+      <td>Stochastic Processes</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Math 122</td>
+      <td>Spencer, Brian</td>
+      <td>spencerb@buffalo.edu</td>
+      <td>7</td>
+      <td>10</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 555LEC A</td>
+      <td>LEC</td>
+      <td>Introduction to Complex System</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Capen 108</td>
+      <td>Muldoon, Sarah</td>
+      <td>smuldoon@buffalo.edu</td>
+      <td>2</td>
+      <td>15</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 561LEC A</td>
+      <td>LEC</td>
+      <td>Intro to Represent Theory</td>
+      <td>TR</td>
+      <td>09:30 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 205</td>
+      <td>Chirvasitu, Alexandru</td>
+      <td>achirvas@buffalo.edu</td>
+      <td>4</td>
+      <td>5</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 563LEC A</td>
+      <td>LEC</td>
+      <td>Topics in Applied Math</td>
+      <td>MW</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Math 205</td>
+      <td>Bichuch, Maxim</td>
+      <td>mbichuch@buffalo.edu</td>
+      <td>2</td>
+      <td>11</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 619LEC A</td>
+      <td>LEC</td>
+      <td>Algebra</td>
+      <td>TR</td>
+      <td>11:00 AM</td>
+      <td>12:20 PM</td>
+      <td>Math 205</td>
+      <td>Chirvasitu, Alexandru</td>
+      <td>achirvas@buffalo.edu</td>
+      <td>4</td>
+      <td>11</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 627LEC A</td>
+      <td>LEC</td>
+      <td>Topology</td>
+      <td>MWF</td>
+      <td>10:00 AM</td>
+      <td>10:50 AM</td>
+      <td>Math 205</td>
+      <td>Zhang, Xingru</td>
+      <td>xinzhang@buffalo.edu</td>
+      <td>4</td>
+      <td>11</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 629LEC A</td>
+      <td>LEC</td>
+      <td>Theory of Numbers</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 235</td>
+      <td>Zhu, Hui</td>
+      <td>hjzhu@buffalo.edu</td>
+      <td>5</td>
+      <td>14</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 667LEC 000</td>
+      <td>LEC</td>
+      <td>High Perform Computing 1</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Bell 325</td>
+      <td>Jadamec, Margarete</td>
+      <td>mjadamec@buffalo.edu</td>
+      <td>2</td>
+      <td>2</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 731LEC A</td>
+      <td>LEC</td>
+      <td>Functional Analysis</td>
+      <td>WF</td>
+      <td>02:30 PM</td>
+      <td>03:50 PM</td>
+      <td>Math 122</td>
+      <td>Xia, Jingbo</td>
+      <td>jxia@buffalo.edu</td>
+      <td>6</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 735LEC A</td>
+      <td>LEC</td>
+      <td>Algebraic Geometry</td>
+      <td>TR</td>
+      <td>02:00 PM</td>
+      <td>03:20 PM</td>
+      <td>Math 235</td>
+      <td>Zhu, Hui</td>
+      <td>hjzhu@buffalo.edu</td>
+      <td>3</td>
+      <td>14</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 805SEM 000</td>
+      <td>SEM</td>
+      <td>Colloquium</td>
+      <td>R</td>
+      <td>04:00 PM</td>
+      <td>05:00 PM</td>
+      <td>Math 250</td>
+      <td>Sage, Daniel</td>
+      <td>dsage@buffalo.edu</td>
+      <td>4</td>
+      <td>50</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 819LEC A</td>
+      <td>LEC</td>
+      <td>Topics in Algebra</td>
+      <td>MWF</td>
+      <td>11:00 AM</td>
+      <td>11:50 AM</td>
+      <td>Math 205</td>
+      <td>Rai, Ankit</td>
+      <td>arai22@buffalo.edu</td>
+      <td>1</td>
+      <td>11</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 827LEC A</td>
+      <td>LEC</td>
+      <td>Selected Topics Topology</td>
+      <td>MW</td>
+      <td>01:00 PM</td>
+      <td>02:20 PM</td>
+      <td>Math 122</td>
+      <td>Srinivas, Vasudevan</td>
+      <td>vs74@buffalo.edu</td>
+      <td>4</td>
+      <td>30</td>
+      <td>In person</td>
+    </tr>
+    <tr>
+      <td>MTH 839LEC A</td>
+      <td>LEC</td>
+      <td>Sel Topics Applied Math</td>
+      <td>TR</td>
+      <td>12:30 PM</td>
+      <td>01:50 PM</td>
+      <td>Math 205</td>
+      <td>Dyachenko, Sergey</td>
+      <td>sergeydy@buffalo.edu</td>
+      <td>5</td>
+      <td>11</td>
+      <td>In person</td>
+    </tr>
+  </tbody>
+</table>
+
+        <script>
+            new DataTable('#scheduleTable', {
+                // Initialize the DataTable on the table with the ID "myTable"
+                paging: false,
+                searching: true,
+                ordering: true,
+                info: false,
+                fixedHeader: true,
+                autoWidth: false,
+                layout:
+                {
+                    topStart: 'search',
+                    topEnd: null,
+                    bottomStart: 'info',
+                    bottomEnd: 'paging'
+                },
+                columnDefs: [
+                    { targets: 0, width: '13%' },
+                    { targets: 1, width: '3%' },
+                    { targets: 2, width: '20%' },
+                    { targets: 3, width: '3%' },
+                    { targets: 4, width: '7%' },
+                    { targets: 5, width: '7%' },
+                    { targets: 6, width: '10%' },
+                    { targets: 7, width: '17%' },
+                    { targets: 8, width: '5%' },
+                    { targets: 9, width: '4%' },
+                    { targets: 10, width: '4%' },
+                    { targets: 11, width: '7%' }
+                ],
+            });
+
+        </script>
+
+</body>
+
+</html>
