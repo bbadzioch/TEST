@@ -34,7 +34,7 @@
         }
 
         .footnote {
-            font-size: 16px;
+            font-size: 15px;
             font-style: italic;
             color: #555555;
             margin-left: 20px;
@@ -51,27 +51,33 @@
         }
 
         table.dataTable th, td {
-            font-size: 16px;
+            font-size: 15px;
             font-family: Arial, sans-serif;
             padding: 5px !important;
-            margin: 1px;
         }
 
-        table>tbody>tr:nth-child(even) td {
+        td.custom-format {
+            padding-right: 30px !important;
+        }
+        th.custom-format {
+            text-align: left !important;
+        }
+
+        table>tbody>tr:nth-child(odd) td {
             background-color: #CCDEF1;
             color: #212529;
         }
 
-        table>tbody>tr:nth-child(odd) td {
+        table>tbody>tr:nth-child(even) td {
             background-color: #ffffff;
             color: #212529;
         }
 
-        table>tbody>tr:nth-child(even):hover td {
+        table>tbody>tr:nth-child(odd):hover td {
             background-color: #B7C7D8;
         }
 
-        table>tbody>tr:nth-child(odd):hover td {
+        table>tbody>tr:nth-child(even):hover td {
             background-color: #CCCCCC;
         }
     </style>
@@ -622,7 +628,7 @@
   </tbody>
 </table>
     </div>
-    <p class="footnote">Last updated: October 18, 2025</p>
+    <p class="footnote">Last updated: October 20, 2025</p>
 
         <script>
             new DataTable('#scheduleTable', {
@@ -640,17 +646,17 @@
                     bottomEnd: 'paging'
                 },
                 columnDefs: [
-                    { targets: 0, width: '11%' },
-                    { targets: 1, width: '3%' },
+                    { targets: 0, width: '9%' },
+                    { targets: 1, width: '5%' },
                     { targets: 2, width: '15%' },
-                    { targets: 3, width: '3%' },
-                    { targets: 4, width: '7%' },
-                    { targets: 5, width: '7%' },
+                    { targets: 3, width: '5%' },
+                    { targets: 4, width: '6%' },
+                    { targets: 5, width: '6%' },
                     { targets: 6, width: '8%' },
-                    { targets: 7, width: '17%' },
-                    { targets: 8, width: '5%' },
-                    { targets: 9, width: '4%' },
-                    { targets: 10, width: '4%' },
+                    { targets: 7, width: '15%' },
+                    { targets: 8, width: '7%' },
+                    { targets: 9, width: '4%', className: 'custom-format dt-head-center'},
+                    { targets: 10, width: '4%', className: 'custom-format dt-head-center'},
                     { targets: 11, width: '16%' }
                 ],
             });
